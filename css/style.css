@@ -3,15 +3,18 @@
 }
 
 body {
-    letter-spacing: 0.03em;
+    background-color: rgb(24, 24, 24);
     font-family: 'Manrope', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 1300px;
+    max-width: 1200px;
+    padding-left: 30px;
+    padding-right: 30px;
+
 }
 
 a:active,
@@ -34,16 +37,19 @@ li {
     position: sticky;
     top: 0px;
     z-index: 100;
+    transition: all .3s
 }
 
-.header__content-inner {}
-
+.header_hidden {
+    transform: translateY(-100%);
+    transition: all .3s
+}
 
 
 .down:after {
     font-family: 'icomoon';
     content: "\f107";
-    font-size: 15px;
+    font-size: 13px;
     padding-left: 5px;
     color: #fff;
 }
@@ -54,28 +60,26 @@ li {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 16px;
+    min-height: 80px;
+    font-size: 15px;
 
 }
 
 .topmenu li {
     position: relative;
-
 }
 
 
-.topmenu a {
-    padding-top: 10px;
-    padding-bottom: 8px;
-    padding-left: 60px;
+.topmenu li a {
+    padding-right: 30px;
+    padding-left: 30px;
     color: #fff;
-
-
 }
 
-nav .logo a {
-    margin-right: auto;
-    padding-left: 0px;
+#buy {
+    padding: 10px;
+    border: 2px solid #a45eff;
+    border-radius: 50px;
 }
 
 nav .logo {
@@ -88,8 +92,17 @@ nav .logo {
     padding-left: 0px;
 }
 
+.topmenu>.logo>a {
+    padding-left: 0;
+}
+
+
 .topmenu a:hover {
-    color: #a46cff;
+    color: #a45eff;
+}
+
+.topmenu a:hover span.down {
+    color: #a45eff;
 }
 
 .submenu {
@@ -108,54 +121,40 @@ nav ul li:hover>ul {
     display: block;
 }
 
+.submenu>li>a {
+    width: 100%;
+    padding: 20px 0 15px 30px;
+}
+
+
 
 .info {
-    background-color: rgb(24, 24, 24);
+    background: #181818;
+
+    color: white;
 }
 
 .info__content-inner {
     text-align: center;
-    padding: 180px 0px;
-    color: rgba(255, 255, 255, 0.788)
+    padding: 130px 0px;
 }
 
-.info__big-text {
-    font-size: 44px;
+.info__title {
+    letter-spacing: -3px;
     font-weight: bold;
-    color: #8247e5;
+    font-size: 140px;
+    text-align: left;
 }
 
-.info__big-text span {
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-}
-
-.info__statistic {
-    display: flex;
-    justify-content: space-between;
-    padding: 60px 0;
-}
-
-.info__statistic-title {
-    font-size: 35px;
-    font-weight: bold;
-    padding-bottom: 10px;
-    color: rgb(143, 245, 133);
-}
-
-.info__statistic-text {
-    font-size: 15px;
-}
-
-.info__small-text {
-    font-size: 29px;
+.info__under-title {
+    font-size: 26px;
+    text-align: left;
     line-height: 1.4;
-    color: rgb(255, 255, 255);
 }
-
 
 .guide {
-    background-color: #439142;
+    background: rgb(152, 241, 255);
+    background: radial-gradient(circle, rgba(152, 241, 255, 1) 0%, rgba(228, 238, 255, 1) 48%, rgba(224, 184, 255, 1) 100%);
 }
 
 .guide__content-inner {
@@ -171,7 +170,7 @@ nav ul li:hover>ul {
 
 .guide__steps-title {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 50px;
     padding-bottom: 30px;
 }
 
@@ -191,8 +190,71 @@ nav ul li:hover>ul {
 
 
 
+.contacts {
+    color: #fff;
+    padding: 100px 0;
+}
+
+.contacts__content-inner {}
+
+.contacts__title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacts__under-title {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.contacts__buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts__buttons a {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    min-width: 230px;
+    min-height: 70px;
+    padding-top: 20px;
+    margin: 0 25px;
+    border: 1px solid #fff;
+
+    border-radius: 350px;
+}
+
+.contacts__wp a:hover {
+    background: rgb(43, 183, 65);
+    background: linear-gradient(0deg, rgba(43, 183, 65, 1) 0%, rgba(37, 211, 102, 1) 100%);
+    border-color: transparent;
+}
+
+.contacts__tg a:hover {
+    background: rgb(42, 171, 238);
+    background: linear-gradient(0deg, rgba(42, 171, 238, 1) 0%, rgba(34, 158, 217, 1) 100%);
+    border-color: transparent;
+}
+
+.contacts__wp a:before {
+    font-family: 'icomoon';
+    content: "\f232";
+    padding-right: 10px;
+}
+
+.contacts__tg a:before {
+    font-family: 'icomoon';
+    content: "\f2c6";
+    padding-right: 10px;
+}
+
+
 .footer {
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(31, 17, 66);
     color: #fff;
 }
 
