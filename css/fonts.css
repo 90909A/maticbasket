@@ -26,46 +26,51 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-wallet:before {
-  content: "\e900";
-}
-
 .icon-plus:before {
   content: "\f067";
 }
-
-.icon-align-justify:before {
-  content: "\f039";
-}
-
 .icon-edit:before {
   content: "\f044";
 }
-
 .icon-pencil-square-o:before {
   content: "\f044";
 }
-
-.icon-angle-double-down:before {
-  content: "\f103";
+.icon-calendar:before {
+  content: "\f073";
 }
-
+.icon-group:before {
+  content: "\f0c0";
+}
+.icon-users:before {
+  content: "\f0c0";
+}
+.icon-bars:before {
+  content: "\f0c9";
+}
+.icon-navicon:before {
+  content: "\f0c9";
+}
+.icon-reorder:before {
+  content: "\f0c9";
+}
 .icon-angle-right:before {
   content: "\f105";
 }
-
 .icon-angle-down:before {
   content: "\f107";
 }
-
+.icon-database:before {
+  content: "\f1c0";
+}
 .icon-file-pdf-o:before {
   content: "\f1c1";
 }
-
-.icon-whatsapp:before {
-  content: "\f232";
+.icon-paper-plane:before {
+  content: "\f1d8";
 }
-
-.icon-telegram:before {
-  content: "\f2c6";
+.icon-send:before {
+  content: "\f1d8";
+}
+.icon-rocket:before {
+  content: "\e9a5";
 }

@@ -32,6 +32,10 @@ li {
     padding: 0;
 }
 
+.purple {
+    color: #8753ff;
+}
+
 .header {
     background-color: rgb(24, 24, 24);
     position: sticky;
@@ -65,15 +69,13 @@ li {
 
 }
 
-.topmenu li {
-    position: relative;
-}
 
 
 .topmenu li a {
     padding-right: 30px;
     padding-left: 30px;
     color: #fff;
+    display: inline-block;
 }
 
 #buy {
@@ -84,7 +86,7 @@ li {
 
 nav .logo {
     margin-right: auto;
-    padding-left: 0px;
+
 }
 
 .header__logo {
@@ -101,42 +103,20 @@ nav .logo {
     color: #a45eff;
 }
 
-.topmenu a:hover span.down {
-    color: #a45eff;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    width: 100%;
-}
-
-
-.submenu li {
-    background-color: rgb(24, 24, 24);
-}
-
-
-nav ul li:hover>ul {
-    display: block;
-}
-
-.submenu>li>a {
-    width: 100%;
-    padding: 20px 0 15px 30px;
-}
 
 
 
 .info {
-    background: #181818;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(59deg, #8EC5FC 0%, #E0C3FC 100%);
 
-    color: white;
+
+    color: black;
 }
 
 .info__content-inner {
     text-align: center;
-    padding: 130px 0px;
+    padding: 100px 0px;
 }
 
 .info__title {
@@ -152,43 +132,141 @@ nav ul li:hover>ul {
     line-height: 1.4;
 }
 
+.info__stat-container {
+
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 15px;
+
+
+    padding: 40px 0;
+}
+
+.stat__item {}
+
+.stat__icon {
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
+#calendar::after {
+    font-family: 'icomoon';
+    content: "\e9a5";
+
+}
+
+#people::after {
+    font-family: 'icomoon';
+    content: "\f0c0";
+}
+
+#matic::after {
+    font-family: 'icomoon';
+    content: "\f1c0";
+}
+
+.stat__title {
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.stat__under-title {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.info__slogan {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
 .guide {
-    background: rgb(152, 241, 255);
-    background: radial-gradient(circle, rgba(152, 241, 255, 1) 0%, rgba(228, 238, 255, 1) 48%, rgba(224, 184, 255, 1) 100%);
+    background-color: rgb(24, 24, 24);
+    color: white;
 }
 
 .guide__content-inner {
-    display: flex;
-    justify-content: space-between;
-    padding: 150px 0;
+    padding: 100px 0;
+}
+
+.guide__title {
+    display: block;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 .guide__steps-container {
+    margin-top: 100px;
     display: block;
-    width: 600px
 }
 
-.guide__steps-title {
-    font-weight: bold;
-    font-size: 50px;
-    padding-bottom: 30px;
-}
-
-.guide__item {
-    padding: 15px 15px;
-    background-color: #fff;
-    border: 1px solid lightgrey;
+.steps__item {
     position: relative;
+    padding-bottom: 50px;
 }
 
-.guide__item:before {
-    font-family: 'icomoon';
-    content: "\f105";
+.item__width {
+    margin: 0 auto;
+    max-width: 760px;
+    width: 100%;
+}
+
+.item__col-right {
+    width: 50%;
+    text-align: right;
+}
+
+.item__col-left {
+    width: 50%;
+    float: right;
+    text-align: left;
+}
+
+.item__text-right {
+    padding-right: 50px;
+}
+
+.item__text-left {
+    padding-left: 50px;
+}
+
+.item__title {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.item__undertitle {
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.item__line {
     position: absolute;
-    right: 25px;
+    width: 3px;
+    top: 0;
+    background: rgb(255, 255, 255);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
-
+.item__circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0px;
+    margin: 0 auto;
+    border: 2px solid #fff;
+}
 
 .contacts {
     color: #fff;
@@ -219,37 +297,29 @@ nav ul li:hover>ul {
     color: #fff;
     font-size: 20px;
     text-align: center;
-    min-width: 230px;
+    min-width: 210px;
     min-height: 70px;
-    padding-top: 20px;
+    padding-top: 22px;
     margin: 0 25px;
-    border: 1px solid #fff;
+    background: rgb(42, 171, 238);
+    background: linear-gradient(0deg, rgba(42, 171, 238, 1) 0%, rgba(34, 158, 217, 1) 100%);
 
-    border-radius: 350px;
+    border-radius: 150px;
 }
 
-.contacts__wp a:hover {
-    background: rgb(43, 183, 65);
-    background: linear-gradient(0deg, rgba(43, 183, 65, 1) 0%, rgba(37, 211, 102, 1) 100%);
-    border-color: transparent;
-}
 
 .contacts__tg a:hover {
     background: rgb(42, 171, 238);
-    background: linear-gradient(0deg, rgba(42, 171, 238, 1) 0%, rgba(34, 158, 217, 1) 100%);
-    border-color: transparent;
+    background: linear-gradient(0deg, rgb(0, 121, 185) 0%, rgba(34, 158, 217, 1) 100%);
+    transition: all 600ms ease 0s;
 }
 
-.contacts__wp a:before {
-    font-family: 'icomoon';
-    content: "\f232";
-    padding-right: 10px;
-}
 
 .contacts__tg a:before {
     font-family: 'icomoon';
-    content: "\f2c6";
-    padding-right: 10px;
+    content: "\f1d8";
+    font-size: 18px;
+    padding-right: 12px;
 }
 
 
@@ -304,7 +374,7 @@ nav ul li:hover>ul {
 
 .btn__footer.tg::before {
     font-family: 'icomoon';
-    content: "\f2c6";
+    content: "\f1d8";
     color: #fff;
     padding-right: 10px;
 }
