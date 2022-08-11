@@ -6,6 +6,7 @@ body {
     background-color: rgb(24, 24, 24);
     font-family: 'Manrope', sans-serif;
     font-size: 22px;
+    line-height: 1.4;
     font-weight: 400;
 }
 
@@ -59,7 +60,7 @@ li {
 }
 
 .topmenu {
-    background-color: rgb(24, 24, 24);
+
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -185,7 +186,7 @@ nav .logo {
 }
 
 .guide {
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(32, 32, 32);
     color: white;
 }
 
@@ -200,13 +201,14 @@ nav .logo {
 }
 
 .guide__steps-container {
-    margin-top: 100px;
-    display: block;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 .steps__item {
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 .item__width {
@@ -237,11 +239,13 @@ nav .logo {
 .item__title {
     font-size: 35px;
     font-weight: bold;
+    line-height: 1;
 }
 
 .item__undertitle {
-    padding-top: 5px;
-    font-size: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+    color: rgb(230, 230, 230);
 }
 
 .item__line {
@@ -266,6 +270,33 @@ nav .logo {
     top: 0px;
     margin: 0 auto;
     border: 2px solid #fff;
+}
+
+#foo {
+    padding: 0 10px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 3px;
+    background-color: transparent;
+    color: rgb(110, 110, 110);
+    position: relative;
+}
+
+#copy {
+    padding: 0 4px;
+    background-color: rgb(230, 230, 230);
+    position: relative;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 3px;
+}
+
+#copy:hover {
+    background-color: rgb(187, 187, 187);
+    color: black;
+}
+
+#copy:active {
+    background-color: transparent;
+    color: white;
 }
 
 .contacts {

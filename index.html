@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header white">
         <div class="container">
             <div class="header__content-inner">
                 <nav>
@@ -138,9 +138,15 @@
                                     <div class="item__title">
                                         Шаг 5
                                     </div>
-                                    <div class="item__undertitle">Копируй рефссылку
-                                        https://maticbasket.com/join/0x0190fabe7d7960308550123a0377fbb7d9016c26
+                                    <div class="item__undertitle">Копируй рефссылку: <br>
+                                        <button id="copy" data-clipboard-target="#foo" aria-describedby="tooltip">
+                                            Копировать
+                                        </button>
 
+                                        <input id="foo"
+                                            value="https://maticbasket.com/join/0x0190fabe7d7960308550123a0377fbb7d9016c26" />
+
+                                        <br>
                                         и выставляй в поисковое окно браузера MetaМask, подтверди подключение кошелька к
                                         лендингу
                                     </div>
@@ -190,9 +196,6 @@
     <div class="contacts">
         <div class="cotainer">
             <div class="contacts__content-inner">
-                <iframe allowTransparency
-                    src="https://drive.google.com/file/d/1Fo_iZIpnDDSn7ZIiZEEoOK6QdKSJaS1i/preview" width=100%
-                    height="680" allow="autoplay" scrolling="no"></iframe>></iframe>
                 <div class="contacts__title">
                     Остались вопросы?
                 </div>
@@ -235,13 +238,9 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/hideHeader.js"></script>
-    <script src="js/accordion.min.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            $("#my-accordion").accordionjs();
-        });
-    </script>
+    <script src="js/clipboard.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
