@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(30, 30, 30);
     font-family: 'Manrope', sans-serif;
     font-size: 22px;
     line-height: 1.4;
@@ -38,7 +38,7 @@ li {
 }
 
 .header {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(30, 30, 30);
     position: sticky;
     top: 0px;
     z-index: 100;
@@ -70,8 +70,16 @@ li {
 
 #buy {
     padding: 10px;
-    border: 2px solid #a45eff;
-    border-radius: 50px;
+    border: 2px solid #8753ff;
+    border-radius: 25px;
+}
+
+#buy:hover {
+    border: 2px solid transparent;
+    border-radius: 25px;
+    background: #8753ff;
+    background: linear-gradient(90deg, rgba(164, 94, 255, 1) 0%, rgba(98, 101, 255, 1) 100%, rgba(255, 255, 255, 1) 152%);
+    color: white;
 }
 
 nav .logo {
@@ -90,7 +98,7 @@ nav .logo {
 
 
 .topmenu a:hover {
-    color: #a45eff;
+    color: #c0a4ff;
 }
 
 
@@ -152,9 +160,10 @@ nav .logo {
 .stat__container {
     color: black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
-    padding: 40px 0;
+    padding: 0 0 140px 0;
 }
 
 .stat__item {
@@ -162,6 +171,7 @@ nav .logo {
     border: 2px solid black;
     padding: 30px 30px;
     border-radius: 10px;
+
 }
 
 .stat__title {
@@ -199,32 +209,15 @@ nav .logo {
 
 
 
-.additional {}
-
-.additional__content-inner {}
-
-.circle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    font-size: 13px;
-    color: #fff;
-    text-align: center;
-    background: rgb(27, 27, 27)
-}
-
-.additional__text {}
 
 .guide {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(30, 30, 30);
     color: white;
 }
 
 .guide__content-inner {
-    padding: 100px 0;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .guide__title {
@@ -277,15 +270,15 @@ nav .logo {
 
 .item__undertitle {
     padding-top: 10px;
-    font-size: 18px;
-    color: rgb(230, 230, 230);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
 }
 
 .item__line {
     position: absolute;
-    width: 3px;
-    top: 0;
-    background: rgb(255, 255, 255);
+    width: 2px;
+    top: 40px;
+    background: #302153;
     bottom: 0;
     left: 0;
     right: 0;
@@ -293,16 +286,17 @@ nav .logo {
 }
 
 .item__circle {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 100px;
-    background: rgb(255, 255, 255);
+    background: transparent;
+    border: 2px solid #8753ff;
     position: absolute;
     right: 0;
     left: 0;
     top: 0px;
     margin: 0 auto;
-    border: 2px solid #fff;
+
 }
 
 #foo {
@@ -333,42 +327,50 @@ nav .logo {
 }
 
 .contacts {
-    color: #fff;
-    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 120px 0;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(59deg, #8EC5FC 0%, #E0C3FC 100%);
 }
 
-.contacts__content-inner {}
+.contacts__container {}
 
 .contacts__title {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .contacts__under-title {
-    font-size: 22px;
+    margin-top: 10px;
+    font-size: 20px;
     text-align: center;
-    margin-bottom: 70px;
+
 }
 
 .contacts__buttons {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .contacts__buttons a {
+    display: inline-block;
     color: #fff;
     font-size: 20px;
     text-align: center;
-    min-width: 210px;
-    min-height: 70px;
-    padding-top: 22px;
+    width: 210px;
+    height: 70px;
     margin: 0 25px;
+    padding-top: 17px;
     background: rgb(42, 171, 238);
     background: linear-gradient(0deg, rgba(42, 171, 238, 1) 0%, rgba(34, 158, 217, 1) 100%);
+    border: 2px solid rgb(8, 79, 117);
+    border-radius: 50px;
 
-    border-radius: 150px;
 }
 
 
@@ -384,83 +386,4 @@ nav .logo {
     content: "\f1d8";
     font-size: 18px;
     padding-right: 12px;
-}
-
-
-.footer {
-    background-color: rgb(31, 17, 66);
-    color: #fff;
-}
-
-.footer__content-inner {
-    padding: 100px 0;
-}
-
-.footer__items {
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer__item {
-    display: inline-block;
-    text-align: center;
-    max-width: 255px;
-}
-
-
-.footer__text {
-    font-size: 17px;
-}
-
-.btn__footer {
-    color: #fff;
-    border: rgb(8, 8, 8) 2px solid;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    padding: 15px;
-}
-
-.btn__footer.wp {
-    color: #fff;
-    background-color: rgb(31, 192, 31);
-}
-
-.btn__footer.wp::before {
-    font-family: 'icomoon';
-    content: "\f232";
-    color: #fff;
-    padding-right: 10px;
-}
-
-.btn__footer.tg {
-    background-color: rgb(78, 72, 165);
-}
-
-.btn__footer.tg::before {
-    font-family: 'icomoon';
-    content: "\f1d8";
-    color: #fff;
-    padding-right: 10px;
-}
-
-.btn__footer.pdf {
-    background-color: rgb(179, 127, 59);
-}
-
-.btn__footer.pdf::before {
-    font-family: 'icomoon';
-    content: "\f1c1";
-    color: #fff;
-    padding-right: 10px;
-}
-
-.btn__footer.buy {
-    background-color: rgb(194, 77, 41);
-}
-
-.btn__footer.buy::before {
-    font-family: 'icomoon';
-    content: "\e900";
-    color: #fff;
-    padding-right: 10px;
 }
