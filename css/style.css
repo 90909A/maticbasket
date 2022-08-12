@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(32, 32, 32);
     font-family: 'Manrope', sans-serif;
     font-size: 22px;
     line-height: 1.4;
@@ -38,7 +38,7 @@ li {
 }
 
 .header {
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(32, 32, 32);
     position: sticky;
     top: 0px;
     z-index: 100;
@@ -51,23 +51,14 @@ li {
 }
 
 
-.down:after {
-    font-family: 'icomoon';
-    content: "\f107";
-    font-size: 13px;
-    padding-left: 5px;
-    color: #fff;
-}
 
 .topmenu {
-
     position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     min-height: 80px;
     font-size: 15px;
-
 }
 
 
