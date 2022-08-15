@@ -78,6 +78,7 @@ li {
 #bars::before {
     display: none;
     font-family: 'icomoon';
+    color: #fff;
     content: "\f0c9";
     font-size: 25px;
 }
@@ -88,6 +89,10 @@ li {
     background: #8753ff;
     background: linear-gradient(90deg, rgba(164, 94, 255, 1) 0%, rgba(98, 101, 255, 1) 100%, rgba(255, 255, 255, 1) 152%);
     color: white;
+}
+
+.dp {
+    padding-right: 0px !important;
 }
 
 nav .logo {

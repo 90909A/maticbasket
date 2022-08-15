@@ -1,11 +1,57 @@
 @media (max-width: 1050px) {
+    .topmenu li a {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
     .stat__item {
         max-width: 30%;
+        text-align: center;
+    }
+
+    .stat__title {
+        font-size: 30px;
+    }
+
+    .stat__icon {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media (max-width: 910px) {
+    .topmenu {
+        font-size: 14px;
+    }
+
+    .main__title {
+        font-size: 110px;
+    }
+
+    .stat__title {
+        font-size: 25px;
     }
 }
 
-@media (max-width: 920px) {
+
+
+@media (max-width: 810px) {
     #bars::before {
         display: block;
+    }
+
+    .main__title {
+        font-size: 100px;
+    }
+
+    .main__under-title {
+        font-size: 18px;
+        max-width: 670px;
+    }
+
+    .main__btn a {
+        font-size: 15px;
     }
 }
