@@ -137,6 +137,10 @@
     .item__circle {
         margin: 0 0;
     }
+
+    .additional__text {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -249,6 +253,8 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+
 }
 
 @media (max-width: 425px) {
@@ -321,7 +327,7 @@
     }
 
     .main__under-title {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .item__undertitle {

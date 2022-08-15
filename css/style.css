@@ -186,6 +186,18 @@ nav .logo {
     border-bottom: 1px solid rgba(0, 0, 0, 0.600);
 }
 
+.additional__text {
+    margin: 20px 0 60px 0;
+    padding: 35px 10px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+
+    border-left: 15px solid #8753ff;
+    color: white;
+    font-size: 20px;
+}
+
 .stat {}
 
 .stat__container {
