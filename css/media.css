@@ -5,6 +5,7 @@
     }
 
     .stat__item {
+        padding: 17px;
         max-width: 30%;
         text-align: center;
     }
@@ -27,7 +28,7 @@
     }
 
     .main__title {
-        font-size: 110px;
+        font-size: 105px;
     }
 
     .stat__title {
@@ -37,13 +38,29 @@
 
 
 
-@media (max-width: 810px) {
-    #bars::before {
-        display: block;
+@media (max-width: 780px) {
+    .menu__hide {
+        display: none !important;
+    }
+
+
+    .topmenu {
+        justify-content: center;
+    }
+
+    nav .logo {
+        margin-right: 0;
+
+    }
+
+    .menu__mob {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .main__title {
-        font-size: 100px;
+        font-size: 92px;
     }
 
     .main__under-title {
@@ -53,5 +70,109 @@
 
     .main__btn a {
         font-size: 15px;
+    }
+
+    .main__btn a::before {
+        font-size: 15px;
+    }
+
+    .item__title {
+        font-size: 33px;
+    }
+
+    .item__undertitle {
+        font-size: 17px;
+    }
+
+    .stat__under-title {
+        font-size: 17px;
+    }
+
+    .guide__content-inner {
+        padding-top: 120px;
+    }
+
+    .main__content-inner {
+        padding: 100px 0px 140px 0px;
+    }
+
+    .stat__container {
+        padding: 0 0 110px 0;
+    }
+}
+
+@media (max-width: 690px) {
+    .main__content-inner {
+        padding: 70px 0px 100px 0px;
+    }
+
+    .main__title {
+        font-size: 80px;
+    }
+
+    .main__under-title {
+        font-size: 17px;
+    }
+
+    .main__btn a {
+        margin-top: 20px;
+    }
+
+    .stat__container {
+        padding: 0 0 70px 0;
+    }
+
+    .stat__title {
+        font-size: 20px;
+    }
+
+    .stat__under-title {
+        font-size: 15px;
+    }
+
+    .guide__content-inner {
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+
+    .guide__steps-container {
+        margin-top: 100px;
+    }
+
+    .guide__title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu__mob li a {
+        font-size: 14px;
+    }
+
+    .main__title {
+        font-size: 55px;
+    }
+
+    .main__under-title {
+        font-size: 15px;
+    }
+
+    .main__btn a {
+        font-size: 13px;
+    }
+
+    .main__btn a::before {
+        font-size: 13px;
+    }
+
+    .stat__container {
+        justify-content: center;
+    }
+
+    .stat__item {
+        min-width: 75%;
+        padding: 17px;
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 }

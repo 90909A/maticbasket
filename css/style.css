@@ -13,8 +13,8 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1200px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
 
 }
 
@@ -66,6 +66,7 @@ li {
     padding-left: 30px;
     color: #fff;
     display: inline-block;
+    white-space: nowrap;
 }
 
 #buy {
@@ -80,7 +81,7 @@ li {
     font-family: 'icomoon';
     color: #fff;
     content: "\f0c9";
-    font-size: 25px;
+    font-size: 30px;
 }
 
 #buy:hover {
@@ -118,6 +119,22 @@ nav .logo {
 .gradient {
     background-color: #8EC5FC;
     background-image: linear-gradient(59deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+
+.menu__mob {
+    display: none;
+}
+
+.menu__mob li {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.menu__mob li a {
+    text-align: center;
+    color: white;
+    font-size: 17px;
 }
 
 .main {
@@ -244,6 +261,7 @@ nav .logo {
     display: block;
     font-weight: bold;
     font-size: 45px;
+    text-align: center;
 }
 
 
@@ -290,7 +308,7 @@ nav .logo {
 }
 
 .item__undertitle {
-    padding-top: 10px;
+    padding-top: 12px;
     font-size: 20px;
     color: rgb(255, 255, 255);
 }
