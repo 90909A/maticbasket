@@ -261,7 +261,7 @@
     }
 
     .item__undertitle {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .item__circle {
@@ -321,6 +321,10 @@
     }
 
     .main__under-title {
+        font-size: 16px;
+    }
+
+    .item__undertitle {
         font-size: 16px;
     }
 
