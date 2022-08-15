@@ -69,11 +69,11 @@
     }
 
     .main__btn a {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .main__btn a::before {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .item__title {
@@ -89,7 +89,12 @@
     }
 
     .guide__content-inner {
-        padding-top: 120px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .guide__steps-container {
+        margin-top: 100px;
     }
 
     .main__content-inner {
@@ -144,7 +149,7 @@
     }
 
     .main__under-title {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .main__btn a {
@@ -210,7 +215,7 @@
 
 @media (max-width: 600px) {
     .menu__mob li a {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .main__title {
@@ -218,11 +223,11 @@
     }
 
     .main__under-title {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .main__btn a {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .main__btn a::before {
@@ -239,11 +244,16 @@
         max-width: 100%;
         margin-bottom: 20px;
     }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media (max-width: 425px) {
     .main__title {
-        font-size: 46px;
+        font-size: 55px;
     }
 
     .item__title {
@@ -277,7 +287,7 @@
     }
 
     .menu__mob li a {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .item__text-right {
@@ -287,24 +297,31 @@
     .item__text-left {
         padding-left: 50px;
     }
+
+    .guide__content-inner {
+        padding-bottom: 40px;
+    }
+
+    .contacts__buttons a {
+        font-size: 18px;
+        padding-top: 17px;
+        width: 160px;
+        height: 66px;
+    }
 }
 
 @media (max-width: 375px) {
-    .container {
-        padding-left: 31px;
-        padding-right: 31px;
-    }
 
     .menu__mob li a {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .main__title {
-        font-size: 40px;
+        font-size: 45px;
     }
 
     .main__under-title {
-        font-size: 13px;
+        font-size: 16px;
     }
 
 
