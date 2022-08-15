@@ -74,6 +74,14 @@ li {
     border-radius: 25px;
 }
 
+
+#bars::before {
+    display: none;
+    font-family: 'icomoon';
+    content: "\f0c9";
+    font-size: 25px;
+}
+
 #buy:hover {
     border: 2px solid transparent;
     border-radius: 25px;
@@ -117,6 +125,7 @@ nav .logo {
 }
 
 .main__title {
+
     letter-spacing: -3px;
     font-weight: bold;
     font-size: 125px;
@@ -133,7 +142,6 @@ nav .logo {
 }
 
 .main__btn a {
-
     display: inline-block;
     margin-top: 35px;
     float: left;
@@ -174,6 +182,8 @@ nav .logo {
 
 }
 
+
+
 .stat__title {
     display: inline;
     font-size: 35px;
@@ -207,8 +217,13 @@ nav .logo {
     content: "\f1c0";
 }
 
-
-
+.additional__container {
+    text-align: left;
+    border: 2px solid black;
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin-bottom: 120px;
+}
 
 .guide {
     background-color: rgb(30, 30, 30);
@@ -223,8 +238,9 @@ nav .logo {
 .guide__title {
     display: block;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 45px;
 }
+
 
 .guide__steps-container {
     margin-top: 150px;
@@ -299,12 +315,21 @@ nav .logo {
 
 }
 
-#foo {
-    padding: 0 10px;
+
+
+#copy__input {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+
+}
+
+#copy__input-fake {
     border: 1px solid rgb(230, 230, 230);
     border-radius: 3px;
     background-color: transparent;
     color: rgb(110, 110, 110);
+    text-align: center;
     position: relative;
 }
 
@@ -315,6 +340,13 @@ nav .logo {
     border: 1px solid rgb(230, 230, 230);
     border-radius: 3px;
 }
+
+#copy::before {
+    font-family: 'icomoon';
+    content: "\f24d";
+    font-size: 15px;
+}
+
 
 #copy:hover {
     background-color: rgb(187, 187, 187);
@@ -346,6 +378,7 @@ nav .logo {
 .contacts__under-title {
     margin-top: 10px;
     font-size: 20px;
+    font-weight: bold;
     text-align: center;
 
 }
@@ -368,7 +401,7 @@ nav .logo {
     padding-top: 17px;
     background: rgb(42, 171, 238);
     background: linear-gradient(0deg, rgba(42, 171, 238, 1) 0%, rgba(34, 158, 217, 1) 100%);
-    border: 2px solid rgb(8, 79, 117);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 50px;
 
 }

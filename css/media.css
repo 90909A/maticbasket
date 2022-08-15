@@ -1,0 +1,11 @@
+@media (max-width: 1050px) {
+    .stat__item {
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 920px) {
+    #bars::before {
+        display: block;
+    }
+}

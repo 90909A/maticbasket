@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/accordion.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -28,6 +29,7 @@
                         </li>
                         <li><a href="https://www.bestchange.ru/?p=1266953" target="_blank"><span id="buy">Купить
                                     Matic</span></a></li>
+                        <li><a href=""><span id="bars"></span></a></li>
                     </ul>
                 </nav>
 
@@ -64,10 +66,21 @@
                             <div class="stat__title">50 000+</div>
                             <div class="stat__under-title">Matic было распределено</div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </section>
+        <!-- <section class="additional">
+            <div class="container">
+                <div class="additional__content-inner">
+                    <div class="additional__container">
+                        Зарабатывать 200$ в день — это реально! Начни с 1000 руб.
+                        MATIC BASKET - самый захватывающий и уникальный проект на Смарт-контракте 2022 года!
+                    </div>
+                </div>
+            </div>
+        </section> -->
     </section>
     <section class="guide">
         <div class="container">
@@ -147,11 +160,12 @@
                                         Шаг 5
                                     </div>
                                     <div class="item__undertitle">Копируй рефссылку: <br>
-                                        <button id="copy" data-clipboard-target="#foo" aria-describedby="tooltip">
-                                            Копировать
+                                        <button id="copy" data-clipboard-target="#copy__input"
+                                            aria-describedby="tooltip">
                                         </button>
-
-                                        <input id="foo"
+                                        <input id="copy__input" readonly="readonly"
+                                            value="https://maticbasket.com/join/0x0190fabe7d7960308550123a0377fbb7d9016c26" />
+                                        <input id="copy__input-fake" onClick="this.select();" readonly="readonly"
                                             value="https://maticbasket.com/join/0x0190fabe7d7960308550123a0377fbb7d9016c26" />
 
                                         <br>
