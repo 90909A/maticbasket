@@ -187,13 +187,12 @@ nav .logo {
 }
 
 .additional__text {
-    margin: 20px 0 60px 0;
-    padding: 35px 10px;
+    margin: 50px 0 70px 0;
+    padding: 15px 10px;
     border-radius: 3px;
     text-align: center;
     background-color: rgb(30, 30, 30);
-
-    border-left: 15px solid #8753ff;
+    border-left: 20px solid #8753ff;
     color: white;
     font-size: 20px;
 }
